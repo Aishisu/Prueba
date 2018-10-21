@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>LOGIN</title>
+<script type="text/javascript" language="javascript">
+function cambiartexto(){
+if(document.f1.nombre.value.length!=8){
+	submitFlag=false;
+	alert("porfavor ingrese 8 caracteres");
+	document.getElementById('1').value= ""
+
+}
+
+if(document.f1.nombre.value=="isis")
+{
+	alert("Admitido"); document.f1.dosubmit();
+}
+else{
+alert("No admitido");
+} 
+}
+
+
+</script>
+
+</head>
+
+<body bgcolor="lightcyan">
+<center>
+<h1>LOGIN</h1>
+<form name="f1" action="funciones.php" method="get">
+<p>
+Nombre: <input type="text" id="1" name="nombre" value="">
+</p>
+
+<p>
+Apellidos: <input type="text" name="apellidos" value="">
+</p>
+
+<select name= "Deporte" id="deporte">
+<option value="1">futbol </option>
+<option value="2">basquetball </option>
+</select>
+<p>
+<input type='button' value='Enviar' onclick='cambiartexto();'>
+</p>
+</form>
+</center>
+</body>
+</html>
