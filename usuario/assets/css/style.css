@@ -1,0 +1,22 @@
+.titulo
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.nombre, .familia, .hb
+{
+    color: teal;
+    font-size: 18px;
+}
+
+#familiares
+{
+    color: black;    
+}
+
+#btn
+{    
+    font-size: 20px;
+    align-self: center;
+}
